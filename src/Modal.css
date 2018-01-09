@@ -1,0 +1,142 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.modal-inner {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-form-title {
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #F7931D;
+}
+
+.modal-form {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.modal-form input, textarea {
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+.modal-row {
+  display:flex;
+  justify-content: space-between;
+}
+
+.modal-title {
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 10px;
+}
+.modal-name {
+  width: 100%;
+}
+
+.modal-email {
+  width: 48%;
+}
+
+.modal-phone {
+  width: 48%;
+}
+
+.modal-message {
+  height: 150px;
+}
+
+.modal-button {
+  text-align: center;
+}
+
+.modal-form-pending {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-pending-message {
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: #F7931D;
+  margin-top: 0;
+}
+
+.modal-pending-object {
+  margin:auto;
+  margin-top: 50px;
+  border: 16px solid #bdc3c7;
+  width: 50px;
+  height: 50px;
+  border-top-color: #1abc9c;
+  border-bottom-color: #3498db;
+  border-radius: 50%;
+  animation: coloredspin 4s linear infinite;
+}
+
+
+
+@keyframes coloredspin {
+  0%{
+    transform: rotate(0deg) scale(1);
+    border-top-color: #F36819;
+    border-bottom-color: #F36819;
+  }
+  25% {
+    border-top-color: #1676DD;
+    border-bottom-color: #1676DD;
+  }
+  50% {
+    transform: rotate(360deg) scale(1.05);
+    border-top-color: #F7931D;
+    border-bottom-color: #F7931D;
+  }
+  75% {
+    border-top-color: #283647;
+    border-bottom-color: #283647;
+  }
+  100%{
+    transform: rotate(720deg) scale(1);
+    border-top-color: #283647;
+    border-bottom-color: #283647;
+  }
+}
+
+@media (max-width: 1023px) {
+  .modal-inner {
+    width: 60%;
+  }
+}
+
+@media (max-width: 424px) {
+  .modal-inner {
+    width: 80%;
+  }
+}

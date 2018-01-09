@@ -1,0 +1,57 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.carousel {
+  position: relative;
+}
+
+.carousel-img {
+  height: 509px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 509px;
+  background: linear-gradient(to right, rgba(243, 104, 25, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.carousel-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+.carousel-image-text {
+  margin: 0;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.carousel-button {
+  margin: 15px 0 100px;
+}
+
+.carousel-fixed-email {
+  width: 50px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  background-color: #F7931D;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.carousel-fixed-email img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

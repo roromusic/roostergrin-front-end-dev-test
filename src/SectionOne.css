@@ -1,0 +1,67 @@
+.section-one {
+  margin-top: 40px;
+}
+
+.section-one-pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-one-page {
+  display: flex;
+  width: 45%;
+  align-items: center;
+}
+
+.section-one-page-icon {
+  width: 31px;
+  height: 39px;
+}
+.section-one-p {
+  margin-left: 48px;
+}
+
+.section-one-gradient {
+  background-image: url("./img/slanted-gradient-background.svg");
+  height: 254px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-one-p-l {
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1023px) {
+  .section-one-p-l {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-one-page {
+    width: 100%;
+  }
+  
+  .section-one-p-l {
+    font-size: 18px;
+    margin-bottom: 25px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 424px) {
+  .section-one-p-l {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 22px;
+  }
+}
